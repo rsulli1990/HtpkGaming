@@ -60,13 +60,26 @@ p {
 
 button.normal {
     font-size: 14px;
-    font-weight: 600;
     padding: 15px 30px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #143E70;
     border-radius: 4px;
     cursor: pointer;
     border: none;
+    outline: none;
+    transition: 0.2s;
+    align-self: center;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
     outline: none;
     transition: 0.2s;
 }
@@ -81,7 +94,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 5px 10px;
     background-color: #131416;
     box-shadow: 0 5px 15px rgb(128, 128, 128);
     z-index: 999;
@@ -123,6 +136,15 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
 }
 
 /* Home Page */
@@ -292,22 +314,22 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: #000;
+    background-image: url("img/Banners/1920x300/greatball.jpg");
     width: 100%;
-    height: 40vh;
-    background-size: cover;
+    height: 25vh;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 #banner h4 {
-    color: #fff;
+    color: #12B0D6;
     font-size: 16px;
+    padding-bottom: 25px;
 }
 
 #banner h2 {
-    color: #fff;
+    color: #12B0D6;
     font-size: 30px;
-    padding: 10px 0;
 }
 
 #banner h2 span{
@@ -327,11 +349,388 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url("img/Banners/ShinyTreasureex_banner.png");
-    min-width: 580px;
+    min-width: 600px;
     height: 50vh;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 30px;
 }
 
+#sm-banner .banner-box2 {
+    background-image: url("");
+}
+
+#sm-banner h4 {
+    color: red;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: red;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #131416;
+    border: 1px solid #131416;
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/Banners/480x320/ShinyTreasureEx.jpg");
+    min-width: 50%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("img/Banners/480x320/SilverTempest.jpg");
+}
+
+
+#banner3 .banner-box3 {
+    background-image: url("img/Banners/480x320/HitPackBundle.jpg");
+    background-size: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner3 .banner-box4 {
+    background-image: url("img/Banners/480x320/PokemonDay2024.jpg");
+}
+
+#banner3 h2 {
+    color: #C31E30;
+    font-weight: 900;
+    font: 22px;
+}
+
+#banner3 h3 {
+    color: #143E70;
+    font-weight: 800;
+    font: 15px;
+}
+
+#newsletter  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/Banners/1920x300/pokeball.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+#newsletter p span {
+    color: #143E70;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #143E70;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #143E70;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+footer .logo {
+    height: 20vh;
+    width: 75%;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: #143E70;
+    text-wrap: wrap;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #143E70;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+footer .follow i {
+    color: #143E70;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #12B0D6;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #12B0D6;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
 /* Shop Page */
+
+/* Start Media Query */
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6ef;
+        box-shadow: 0 40px 60px grey;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 10px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #prod1 .prod-container {
+        justify-content:  center;
+    }
+
+    #prod1 .prod {
+        margin: 15px;
+    }
+    #banner {
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 477px){
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    h1 {
+        font-size: 38px;   
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+
+    }
+    #prod1 .prod {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+}
+
+/* Shop Page */
+
+#page-header {
+    background-image: url('img/Banners/1920x300/pokeball.jpg');
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2, 
+#page-header p {
+    color: #12B0D6;
+}
+
+#pagination {
+    text-align: center;
+
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: grey;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color:  #fff;
+    font-weight: 500;
+}
+#pagination a i {
+    font-size: 16px;
+}
